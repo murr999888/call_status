@@ -10,7 +10,7 @@
 	<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<script> 
+	<script>
 		setInterval(function(){
 			$('#pbx_int').load('pbx_internal.php?' + Date.now());
 		}, 1000);
@@ -26,7 +26,7 @@
 		setInterval(function(){
 			$('#pbx_queue_abandon').load('pbx_queue_abandon.php?' + Date.now());
 		}, 15000);
-		
+
 		$(document).ready(function(){
 			$('#pbx_int').load('pbx_internal.php');
 			$('#pbx_ext').load('pbx_external.php');

@@ -1,7 +1,7 @@
 <?php
 
 if (!isset($_GET['num_from']) || !isset($_GET['num_to'])) {
-	return;
+    return;
 }
 
 $num_from = trim($_GET['num_from']);
@@ -23,10 +23,9 @@ $password = "orig";
 $context = "from-internal";
 
 $socket = stream_socket_client("tcp://127.0.0.1:$port");
-if($socket)
-{
+if ($socket) {
     echo "Соединение с сервером установлено. Отправлена аутентификация.\r\n";
-                                                                
+
     // Prepare authentication request
     $authenticationRequest = "Action: Login\r\n";
     $authenticationRequest .= "Username: $username\r\n";
@@ -35,8 +34,7 @@ if($socket)
 
     // Send authentication request
     $authenticate = stream_socket_sendto($socket, $authenticationRequest);
-    if($authenticate > 0)
-    {
+    if ($authenticate > 0) {
         // Wait for server response
         usleep(200000);
 
@@ -44,8 +42,7 @@ if($socket)
         $authenticateResponse = fread($socket, 4096);
 
         // Check if authentication was successful
-        if(strpos($authenticateResponse, 'Success') !== false)
-        {
+        if (strpos($authenticateResponse, 'Success') !== false) {
             echo "Аутентификация успешна.\r\nПытаемся звонить.\r\n";
 
             // Prepare originate request
@@ -59,8 +56,7 @@ if($socket)
 
             // Send originate request
             $originate = stream_socket_sendto($socket, $originateRequest);
-            if($originate > 0)
-            {
+            if ($originate > 0) {
                 // Wait for server response
                 usleep(200000);
 
@@ -68,10 +64,9 @@ if($socket)
                 $originateResponse = fread($socket, 4096);
 
                 // Check if originate was successful
-                if(strpos($originateResponse, 'Success') !== false)
-                {
+                if (strpos($originateResponse, 'Success') !== false) {
                     echo "Звонок начат. Сейчас должен зазвонить телефон с номером " . $num_from . ".\r\n";
-		    echo "Снимите трубку и ожидайте соединения. Теперь эту форму можно закрыть.\r\n";
+                    echo "Снимите трубку и ожидайте соединения. Теперь эту форму можно закрыть.\r\n";
                 } else {
                     echo "Ошибка начала звонка.\r\n";
                 }

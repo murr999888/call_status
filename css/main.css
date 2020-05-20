@@ -1,159 +1,155 @@
-
 html {
-  	font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-	text-decoration: none;
+  font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  text-decoration: none;
 }
 
-
 body {
-	width: 100%;
-    	height: 100%;
-    	margin: 0;
-	background-color: #f1f1f1;
-
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  background-color: #f1f1f1;
 }
 
 a {
-	text-decoration: none;
-	/*color: #000;*/
+  text-decoration: none;
+  /*color: #000;*/
 }
 
 .main {
-	float: left;
-	width: 100%;
-    	height: 100%;
-	clear: both;
+  float: left;
+  width: 100%;
+  height: 100%;
+  clear: both;
 }
 
 .left {
-	width: 40%;
-	float: left;
+  width: 40%;
+  float: left;
 }
 
 .right {
-	width: 60%;
-	float: left;
+  width: 60%;
+  float: left;
 }
 
 .grey_bk {
-	background-color: #ccc;
+  background-color: #ccc;
 }
 
 .unreachable_bk {
-	background-color: #ccc;
+  background-color: #ccc;
 }
 
 .unregistered_bk {
-	background-color: #999;
+  background-color: #999;
 }
 
 .darkgrey_bk {
-	background-color: #999;
-}       
+  background-color: #999;
+}
 
 .yellow_bk {
-	background-color: yellow;
+  background-color: yellow;
 }
 
 .green_bk {
-	color: #fff;
-	background-color: green;
+  color: #fff;
+  background-color: green;
 }
 
 .red_bk {
-	color: #fff;
-	background-color: brown;
+  color: #fff;
+  background-color: brown;
 }
 
 .blue_bk {
-	color: #fff;
-	background-color: blue;
+  color: #fff;
+  background-color: blue;
 }
 
 .idle_bk {
-	background-color: #fff;
+  background-color: #fff;
 }
 
 .table {
-	/*box-shadow: 0 0 5px rgba(0,0,0,0.5);*/
-	font-size: 10pt;
-	width: 100%;
-	border-collapse: collapse;
-	margin-bottom: 10px;
-	border: 3px solid #aaa;
-	background-color: #fff;
-
+  /*box-shadow: 0 0 5px rgba(0,0,0,0.5);*/
+  font-size: 10pt;
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 10px;
+  border: 3px solid #aaa;
+  background-color: #fff;
 }
 
 .table td {
-	border: 1px solid #777;
-	padding: 4px;
-
+  border: 1px solid #777;
+  padding: 4px;
 }
 
 .table th {
-	font-weight: normal;
-   	text-align: center;   
-   	padding: 4px;
-	border: 1px solid #bbb;
-	background-color: #777;
-	/*background: linear-gradient(#9595b6, #5a567f,#9595b6);*/
-	/*background: linear-gradient(#999, #444,#999);*/
-	color: #fff;
+  font-weight: normal;
+  text-align: center;
+  padding: 4px;
+  border: 1px solid #bbb;
+  background-color: #777;
+  /*background: linear-gradient(#9595b6, #5a567f,#9595b6);*/
+  /*background: linear-gradient(#999, #444,#999);*/
+  color: #fff;
 }
 
-.text_header{
-	display: block;
-	padding: 5px;
-	font-size: 16px;
-	font-weight: bold;
+.text_header {
+  display: block;
+  padding: 5px;
+  font-size: 16px;
+  font-weight: bold;
 }
 
 .table-int {
-	/*box-shadow: 0 0 5px rgba(0,0,0,0.5);*/
+  /*box-shadow: 0 0 5px rgba(0,0,0,0.5);*/
 }
 
 .table-ext {
-	/*box-shadow: 0 0 5px rgba(0,0,0,0.5);*/
+  /*box-shadow: 0 0 5px rgba(0,0,0,0.5);*/
 }
 
 .table-queue {
-	/*box-shadow: 0 0 5px rgba(0,0,0,0.5);*/
+  /*box-shadow: 0 0 5px rgba(0,0,0,0.5);*/
 }
 
 .table-queue-abandon {
-	/*box-shadow: 0 0 5px rgba(0,0,0,0.5);*/
+  /*box-shadow: 0 0 5px rgba(0,0,0,0.5);*/
 }
 
 .table-int td {
-	text-align: center; 
-	vertical-align: middle;
+  text-align: center;
+  vertical-align: middle;
 }
 
 .legend {
-	text-align: center; 
-	font-size: 12px;
-    	position: relative;
-    	float: left;
-	width: 100%;
+  text-align: center;
+  font-size: 12px;
+  position: relative;
+  float: left;
+  width: 100%;
 }
 
 .legend > div {
-	float: left;
-	width: 100%; 
-    	padding: 5px 0;
-	clear: both;
-	margin: 0 auto;
+  float: left;
+  width: 100%;
+  padding: 5px 0;
+  clear: both;
+  margin: 0 auto;
 }
 
 .queue {
-	/*background: linear-gradient(SteelBlue, blue, SteelBlue);*/
-	background-color: SteelBlue;
-	color: #fff;
+  /*background: linear-gradient(SteelBlue, blue, SteelBlue);*/
+  background-color: SteelBlue;
+  color: #fff;
 }
 
 .queue_abandon {
-	/*background: linear-gradient(#9595b6, #5a567f,#9595b6);*/
-	background-color: #5a5666;
-	color: #fff;
+  /*background: linear-gradient(#9595b6, #5a567f,#9595b6);*/
+  background-color: #5a5666;
+  color: #fff;
 }
