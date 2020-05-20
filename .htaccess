@@ -1,0 +1,7 @@
+Order deny,allow
+Deny from all
+Allow from 10.0.0.0/8
+
+<FilesMatch ".(pl|php|cgi|spl|scgi|fcgi)$">
+  	Header unset Cache-Control
+</FilesMatch>
